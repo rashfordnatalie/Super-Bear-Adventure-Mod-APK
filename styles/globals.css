@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+    /* Updated primary color to brown (#A66930) */
+    --primary: 29 55% 42%;
+    --primary-foreground: 0 0% 98%;
+    /* Updated secondary to complementary blue-gray */
+    --secondary: 209 32% 85%;
+    --secondary-foreground: 29 55% 25%;
+    /* Updated muted colors with warm tones */
+    --muted: 32 15% 96%;
+    --muted-foreground: 0 0% 45.1%;
+    /* Updated accent with warm beige */
+    --accent: 32 25% 92%;
+    --accent-foreground: 29 55% 25%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    /* Updated border with warm tone */
+    --border: 30 8% 89.8%;
+    --input: 30 8% 89.8%;
+    /* Updated ring to match primary */
+    --ring: 29 55% 42%;
+    /* Updated chart colors to harmonize with brown theme */
+    --chart-1: 29 55% 42%;
+    --chart-2: 209 32% 65%;
+    --chart-3: 15 45% 55%;
+    --chart-4: 195 25% 55%;
+    --chart-5: 32 35% 75%;
+    --radius: 0.5rem;
+    /* Updated sidebar colors to match brown theme */
+    --sidebar-background: 32 20% 98%;
+    --sidebar-foreground: 29 55% 30%;
+    --sidebar-primary: 29 55% 42%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 32 25% 95%;
+    --sidebar-accent-foreground: 29 55% 25%;
+    --sidebar-border: 30 12% 88%;
+    --sidebar-ring: 29 55% 42%;
+  }
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    /* Updated dark mode primary - slightly lighter brown */
+    --primary: 29 55% 45%;
+    --primary-foreground: 0 0% 98%;
+    /* Updated dark mode secondary */
+    --secondary: 209 32% 20%;
+    --secondary-foreground: 0 0% 98%;
+    /* Updated dark mode muted with warm undertones */
+    --muted: 29 15% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    /* Updated dark mode accent */
+    --accent: 29 25% 18%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    /* Updated dark mode borders with warm tones */
+    --border: 29 8% 14.9%;
+    --input: 29 8% 14.9%;
+    --ring: 29 55% 45%;
+    /* Updated dark mode chart colors */
+    --chart-1: 29 55% 45%;
+    --chart-2: 209 32% 55%;
+    --chart-3: 15 45% 45%;
+    --chart-4: 195 25% 45%;
+    --chart-5: 32 35% 65%;
+    /* Updated dark mode sidebar colors */
+    --sidebar-background: 29 25% 8%;
+    --sidebar-foreground: 32 15% 85%;
+    --sidebar-primary: 29 55% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 29 20% 15%;
+    --sidebar-accent-foreground: 32 15% 85%;
+    --sidebar-border: 29 15% 15%;
+    --sidebar-ring: 29 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
