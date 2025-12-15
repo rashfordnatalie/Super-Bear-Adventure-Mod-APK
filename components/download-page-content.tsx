@@ -6,14 +6,14 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Download, Shield, Zap, CheckCircle, Clock, Coins, Heart, Crown, Ban, Users } from "lucide-react"
 
-const defaultDownloadURL = "https://dl.superbearadv.com/file/Hot51apk/HOT51-superbearadv.com.apk";
+const defaultDownloadURL = "https://dl.superbearadv.com/file/superbearadventure/super-bear-adventure-mod-apk-(superbearadv.com).apk";
 const staticAPKData = {
   name: "SuperBear",
   versions: [ 
     {
       version: "12.0.4",
       size: "205 MB",
-      download_url: "https://dl.superbearadv.com/file/Hot51apk/HOT51-superbearadv.com.apk",
+      download_url: "https://dl.superbearadv.com/file/superbearadventure/super-bear-adventure-mod-apk-(superbearadv.com).apk",
     }
   ],
 };

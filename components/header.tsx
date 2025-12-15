@@ -22,10 +22,39 @@ export function Header() {
                 Home
               </Link> 
             </li>
-            <li>
+            <li className="relative group">
               <Link href="/blog" className="hover:text-primary transition-colors">
                 Blog
               </Link>
+              {/* Desktop Dropdown */}
+              <div className="absolute left-0 top-full mt-2 w-64 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="py-2">
+                  <Link
+                    href="/blog/super-bear-adventure-game-settings"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    Super Bear Adventure Game Settings
+                  </Link>
+                  <Link
+                    href="/blog/super-bear-adventure-mod-apk-old-versions"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    Super Bear Adventure Mod APK Old Versions
+                  </Link>
+                  <Link
+                    href="/blog/super-bear-adventure-mod-apk-for-ios"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    Super Bear Adventure Mod APK For iOS
+                  </Link>
+                  <Link
+                    href="/blog/super-bear-adventure-mod-apk-for-pc"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    Super Bear Adventure Mod APK For PC
+                  </Link>
+                </div>
+              </div>
             </li>
             <li>
               <Link href="/download" className="hover:text-primary transition-colors">
@@ -80,11 +109,42 @@ export function Header() {
               </Link>
               <Link
                 href="/blog"
-                className="py-2 text-foreground hover:text-primary transition-colors"
+                className="py-2 text-foreground hover:text-primary transition-colors font-semibold"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Blog
               </Link>
+              {/* Mobile Blog Submenu Items */}
+              <div className="pl-4 flex flex-col space-y-1">
+                <Link
+                  href="/blog/super-bear-adventure-game-settings"
+                  className="py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Super Bear Adventure Game Settings
+                </Link>
+                <Link
+                  href="/blog/super-bear-adventure-mod-apk-old-versions"
+                  className="py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Super Bear Adventure Mod APK Old Versions
+                </Link>
+                <Link
+                  href="/blog/super-bear-adventure-mod-apk-for-ios"
+                  className="py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Super Bear Adventure Mod APK For iOS
+                </Link>
+                <Link
+                  href="/blog/super-bear-adventure-mod-apk-for-pc"
+                  className="py-2 text-sm text-foreground hover:text-primary transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Super Bear Adventure Mod APK For PC
+                </Link>
+              </div>
               <Link
                 href="/download"
                 className="py-2 text-foreground hover:text-primary transition-colors"
