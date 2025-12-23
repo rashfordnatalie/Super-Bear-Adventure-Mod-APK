@@ -22,6 +22,34 @@ export function Header() {
                 Home
               </Link> 
             </li>
+
+
+
+  <li className="relative group">
+              <Link href="/" className="hover:text-primary transition-colors">
+                Home
+              </Link>
+              {/* Desktop Dropdown */}
+              <div className="absolute left-0 top-full mt-2 w-64 bg-background border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="py-2">
+                <Link
+                    href="/blog/super-bear-adventure-mod-apk-for-ios"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    For iOS
+                  </Link>
+                  <Link
+                    href="/blog/super-bear-adventure-mod-apk-for-pc"
+                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
+                  >
+                    For PC
+                  </Link>
+                </div>
+              </div>
+            </li>
+
+
+
             <li className="relative group">
               <Link href="/blog" className="hover:text-primary transition-colors">
                 Blog
@@ -33,26 +61,14 @@ export function Header() {
                     href="/blog/super-bear-adventure-game-settings"
                     className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
                   >
-                    Super Bear Adventure Game Settings
+                  Game settings
                   </Link>
                   <Link
                     href="/blog/super-bear-adventure-mod-apk-old-versions"
                     className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
                   >
-                    Super Bear Adventure Mod APK Old Versions
-                  </Link>
-                  <Link
-                    href="/blog/super-bear-adventure-mod-apk-for-ios"
-                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
-                  >
-                    Super Bear Adventure Mod APK For iOS
-                  </Link>
-                  <Link
-                    href="/blog/super-bear-adventure-mod-apk-for-pc"
-                    className="block px-4 py-2 text-sm text-foreground hover:bg-primary/10 hover:text-primary transition-colors"
-                  >
-                    Super Bear Adventure Mod APK For PC
-                  </Link>
+                  Old Versions
+                  </Link> 
                 </div>
               </div>
             </li>
@@ -121,28 +137,28 @@ export function Header() {
                   className="py-2 text-sm text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Super Bear Adventure Game Settings
+                 Game Settings
                 </Link>
                 <Link
                   href="/blog/super-bear-adventure-mod-apk-old-versions"
                   className="py-2 text-sm text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Super Bear Adventure Mod APK Old Versions
+                  Old Versions
                 </Link>
                 <Link
                   href="/blog/super-bear-adventure-mod-apk-for-ios"
                   className="py-2 text-sm text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Super Bear Adventure Mod APK For iOS
+                 For iOS
                 </Link>
                 <Link
                   href="/blog/super-bear-adventure-mod-apk-for-pc"
                   className="py-2 text-sm text-foreground hover:text-primary transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Super Bear Adventure Mod APK For PC
+                 For PC
                 </Link>
               </div>
               <Link
